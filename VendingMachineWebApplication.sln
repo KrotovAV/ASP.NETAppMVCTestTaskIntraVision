@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachineWebApplication", "VendingMachineWebApplication\VendingMachineWebApplication.csproj", "{B1C0AB4E-53B7-452A-8CB8-2341937FAD7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachineWebApplication", "VendingMachineWebApplication\VendingMachineWebApplication.csproj", "{B1C0AB4E-53B7-452A-8CB8-2341937FAD7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseLayer", "DataBaseLayer\DataBaseLayer.csproj", "{D6E1E58E-C6D1-45B1-9A1F-FA26854E823F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D3719248-0360-4BC8-BE26-DA4E34521E29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{B1C0AB4E-53B7-452A-8CB8-2341937FAD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1C0AB4E-53B7-452A-8CB8-2341937FAD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1C0AB4E-53B7-452A-8CB8-2341937FAD7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E1E58E-C6D1-45B1-9A1F-FA26854E823F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E1E58E-C6D1-45B1-9A1F-FA26854E823F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E1E58E-C6D1-45B1-9A1F-FA26854E823F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E1E58E-C6D1-45B1-9A1F-FA26854E823F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3719248-0360-4BC8-BE26-DA4E34521E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3719248-0360-4BC8-BE26-DA4E34521E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3719248-0360-4BC8-BE26-DA4E34521E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3719248-0360-4BC8-BE26-DA4E34521E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
