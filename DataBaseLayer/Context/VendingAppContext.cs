@@ -16,7 +16,7 @@ namespace DataBaseLayer.Context
 {
     public class VendingAppContext : DbContext
     {
-        public DbSet<ProductName> ProductsNames { get; set; }
+        public DbSet<Brand> Brands { get; set; }
         public DbSet<Item> Items { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrdersDetails { get; set; }
@@ -42,24 +42,18 @@ namespace DataBaseLayer.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Phone>().HasOne(u => u.Abonent).WithMany(c => c.Phones).HasForeignKey(u => u.AbonentId).
+            modelBuilder.Entity<Item>().HasOne(u => u.Brand).WithMany(c => c.ProductsItems).HasForeignKey(u => u.BrandId);
             modelBuilder.Entity<OrderDetail>().HasOne(u => u.Order).WithMany(c => c.OrdersDetails).HasForeignKey(u => u.OrderId);
   
 
-            modelBuilder.Entity<ProductName>().HasData(
-                new ProductName[]{
-                    new  ProductName { Id=1, Name="Fanta 0.33", ImageUrl="Fanta_33"},
-                    new  ProductName { Id=2, Name="Fanta 0.5",  ImageUrl="Fanta_5"},
-                    new  ProductName { Id=3, Name="Pepsi 0.33", ImageUrl="Pepsi_33"},
-                    new  ProductName { Id=4, Name="Pepsi 0.5",  ImageUrl="Pepsi_5"},
-                    new  ProductName { Id=5, Name="Cola 0.33", ImageUrl="Cola_33"},
-                    new  ProductName { Id=6, Name="Cola 0.5",  ImageUrl="Cola_5"},
-                    new  ProductName { Id=7, Name="Merinda 0.33", ImageUrl="Merinda_33"},
-                    new  ProductName { Id=8, Name="Merinda 0.5",  ImageUrl="Merinda_5"},
-                    new  ProductName { Id=9, Name="Sprite 0.33", ImageUrl="Sprite_33"},
-                    new  ProductName { Id=10, Name="Sprite 0.5",  ImageUrl="Sprite_5"},
-                    new  ProductName { Id=11, Name="Shweps 0.33", ImageUrl="Shweps_33"},
-                    new  ProductName { Id=12, Name="Shweps 0.5",  ImageUrl="Shweps_5"}
+            modelBuilder.Entity<Brand>().HasData(
+                new Brand[]{
+                    new Brand { Id=1, BrandName="Fanta"},
+                    new Brand { Id=2, BrandName="Pepsi"},
+                    new Brand { Id=3, BrandName="Cola"},
+                    new Brand { Id=4, BrandName="Merinda"},
+                    new Brand { Id=5, BrandName="Sprite"},
+                    new Brand { Id=6, BrandName="Shweps"}
                 }
             );
 

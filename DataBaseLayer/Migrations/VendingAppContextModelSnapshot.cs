@@ -22,6 +22,54 @@ namespace DataBaseLayer.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("DataBaseLayer.Entities.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("BrandName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BrandName = "Fanta"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            BrandName = "Pepsi"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            BrandName = "Cola"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            BrandName = "Merinda 0.33"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            BrandName = "Sprite 0.5"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            BrandName = "Shweps 0.5"
+                        });
+                });
+
             modelBuilder.Entity("DataBaseLayer.Entities.Item", b =>
                 {
                     b.Property<int>("Id")
@@ -29,6 +77,9 @@ namespace DataBaseLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BrandId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Count")
                         .HasColumnType("int");
@@ -43,10 +94,11 @@ namespace DataBaseLayer.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
 
                     b.ToTable("Items");
 
@@ -277,98 +329,13 @@ namespace DataBaseLayer.Migrations
                         });
                 });
 
-            modelBuilder.Entity("DataBaseLayer.Entities.ProductName", b =>
+            modelBuilder.Entity("DataBaseLayer.Entities.Item", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("DataBaseLayer.Entities.Brand", "Brand")
+                        .WithMany("ProductsItems")
+                        .HasForeignKey("BrandId");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProductsNames");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ImageUrl = "Fanta_33",
-                            Name = "Fanta 0.33"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            ImageUrl = "Fanta_5",
-                            Name = "Fanta 0.5"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            ImageUrl = "Pepsi_33",
-                            Name = "Pepsi 0.33"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            ImageUrl = "Pepsi_5",
-                            Name = "Pepsi 0.5"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            ImageUrl = "Cola_33",
-                            Name = "Cola 0.33"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            ImageUrl = "Cola_5",
-                            Name = "Cola 0.5"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            ImageUrl = "Merinda_33",
-                            Name = "Merinda 0.33"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            ImageUrl = "Merinda_5",
-                            Name = "Merinda 0.5"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            ImageUrl = "Sprite_33",
-                            Name = "Sprite 0.33"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            ImageUrl = "Sprite_5",
-                            Name = "Sprite 0.5"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            ImageUrl = "Shweps_33",
-                            Name = "Shweps 0.33"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            ImageUrl = "Shweps_5",
-                            Name = "Shweps 0.5"
-                        });
+                    b.Navigation("Brand");
                 });
 
             modelBuilder.Entity("DataBaseLayer.Entities.OrderDetail", b =>
@@ -380,6 +347,11 @@ namespace DataBaseLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("DataBaseLayer.Entities.Brand", b =>
+                {
+                    b.Navigation("ProductsItems");
                 });
 
             modelBuilder.Entity("DataBaseLayer.Entities.Order", b =>
