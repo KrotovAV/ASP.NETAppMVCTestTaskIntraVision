@@ -1,3 +1,7 @@
+using DataBaseLayer.Context;
+using DataBaseLayer.Repositories;
+using System;
+
 namespace VendingMachineWebApplication
 {
     public class Program
@@ -9,6 +13,9 @@ namespace VendingMachineWebApplication
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddSingleton<VendingAppContext>();
+            builder.Configuration.GetConnectionString("Connection");
+            builder.Services.AddTransient<ItemRepository, ItemRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,7 +35,7 @@ namespace VendingMachineWebApplication
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Products}/{action=ShowAllProducts}/{id?}");
 
             app.Run();
         }

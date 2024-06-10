@@ -13,6 +13,130 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\1.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\10.jpg",
+      "PackagePath": "staticwebassets\\img\\10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\2.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\5.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\coca-cola03.jpg",
+      "PackagePath": "staticwebassets\\img\\coca-cola03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\coca-cola05.jpg",
+      "PackagePath": "staticwebassets\\img\\coca-cola05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\coca-cola10.jpg",
+      "PackagePath": "staticwebassets\\img\\coca-cola10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\coca-colaLimon03.jpg",
+      "PackagePath": "staticwebassets\\img\\coca-colaLimon03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\coca-colaLimon05.jpg",
+      "PackagePath": "staticwebassets\\img\\coca-colaLimon05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\coca-colaLimon10.jpg",
+      "PackagePath": "staticwebassets\\img\\coca-colaLimon10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\fantaApelsin03.jpg",
+      "PackagePath": "staticwebassets\\img\\fantaApelsin03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\fantaApelsin05.jpg",
+      "PackagePath": "staticwebassets\\img\\fantaApelsin05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\fantaApelsin10.jpg",
+      "PackagePath": "staticwebassets\\img\\fantaApelsin10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\fantaVinograd03.jpg",
+      "PackagePath": "staticwebassets\\img\\fantaVinograd03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\fantaVinograd05.jpg",
+      "PackagePath": "staticwebassets\\img\\fantaVinograd05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\fantaVinograd10.jpg",
+      "PackagePath": "staticwebassets\\img\\fantaVinograd10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\pepsi03.jpg",
+      "PackagePath": "staticwebassets\\img\\pepsi03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\pepsi05.jpg",
+      "PackagePath": "staticwebassets\\img\\pepsi05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\pepsi10.jpg",
+      "PackagePath": "staticwebassets\\img\\pepsi10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\pepsiZero03.jpg",
+      "PackagePath": "staticwebassets\\img\\pepsiZero03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\pepsiZero05.jpg",
+      "PackagePath": "staticwebassets\\img\\pepsiZero05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\pepsiZero10.jpg",
+      "PackagePath": "staticwebassets\\img\\pepsiZero10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\schweppesKlukva03.jpg",
+      "PackagePath": "staticwebassets\\img\\schweppesKlukva03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\schweppesKlukva05.jpg",
+      "PackagePath": "staticwebassets\\img\\schweppesKlukva05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\schweppesKlukva10.jpg",
+      "PackagePath": "staticwebassets\\img\\schweppesKlukva10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\schweppesLimon03.jpg",
+      "PackagePath": "staticwebassets\\img\\schweppesLimon03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\schweppesLimon05.jpg",
+      "PackagePath": "staticwebassets\\img\\schweppesLimon05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\schweppesLimon10.jpg",
+      "PackagePath": "staticwebassets\\img\\schweppesLimon10.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\sprite03.jpg",
+      "PackagePath": "staticwebassets\\img\\sprite03.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\sprite05.jpg",
+      "PackagePath": "staticwebassets\\img\\sprite05.jpg"
+    },
+    {
+      "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\img\\sprite10.jpg",
+      "PackagePath": "staticwebassets\\img\\sprite10.jpg"
+    },
+    {
       "Id": "D:\\Работа\\GitProject\\ASP.NETAppMVCTestTaskIntraVision\\VendingMachineWebApplication\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

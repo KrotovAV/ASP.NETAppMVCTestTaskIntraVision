@@ -76,3 +76,13 @@ D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApp
 D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\obj\Debug\net7.0\VendingMachineWebApplication.pdb
 D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\obj\Debug\net7.0\VendingMachineWebApplication.genruntimeconfig.cache
 D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\obj\Debug\net7.0\ref\VendingMachineWebApplication.dll
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\DataBaseLayer.deps.json
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\DataBaseLayer.runtimeconfig.json
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\DataBaseLayer.exe
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\DataBaseLayer.dll
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\DataBaseLayer.pdb
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\PresentationLayer.dll
+D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication\bin\Debug\net7.0\PresentationLayer.pdb

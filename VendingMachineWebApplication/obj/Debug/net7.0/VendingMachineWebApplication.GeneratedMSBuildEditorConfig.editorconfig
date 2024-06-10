@@ -16,12 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Работа\GitProject\ASP.NETAppMVCTestTaskIntraVision\VendingMachineWebApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Работа/GitProject/ASP.NETAppMVCTestTaskIntraVision/VendingMachineWebApplication/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[D:/Работа/GitProject/ASP.NETAppMVCTestTaskIntraVision/VendingMachineWebApplication/Views/Products/ShowAllProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvd0FsbFByb2R1Y3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Работа/GitProject/ASP.NETAppMVCTestTaskIntraVision/VendingMachineWebApplication/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/Работа/GitProject/ASP.NETAppMVCTestTaskIntraVision/VendingMachineWebApplication/Views/Products/ShowOrderCoins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvd09yZGVyQ29pbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Работа/GitProject/ASP.NETAppMVCTestTaskIntraVision/VendingMachineWebApplication/Views/Products/ShowOrderProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvd09yZGVyUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Работа/GitProject/ASP.NETAppMVCTestTaskIntraVision/VendingMachineWebApplication/Views/Shared/Error.cshtml]

@@ -1,0 +1,32 @@
+﻿@using DataBaseLayer.Entities;
+@using PresentationLayer.ViewModels;
+
+@model AllProductsViewModel
+
+
+<div class="row">
+    <h2>@Model.title</h2>
+    <div class="col-md-12">
+        <a asp-action="Create" asp-asp-controller="Contacts" class="btn btn-success">
+            Create
+        </a>
+    </div>
+    <h3>@Model.totalChoose</h3>
+ 
+    @foreach (var item in Model.allProducts)
+    {
+        <div class="col-lg-3">
+            <img src="@item.ImageUrl" width="220" alt="Image Not Available" class="img-fluid" />
+          
+            <h2>@item.Title</h2>
+            <p>Цена: @item.Price</p>
+            <p>
+                <a asp-action="Edit" asp-controller="Contacts" class="btn btn-warning" asp-route-id="@item.Id">
+                    Выбрать
+                </a>
+            </p>
+        </div>
+    }
+
+    
+</div>

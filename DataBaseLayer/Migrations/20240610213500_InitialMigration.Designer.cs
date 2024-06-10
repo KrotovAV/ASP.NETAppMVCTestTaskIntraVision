@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataBaseLayer.Migrations
 {
     [DbContext(typeof(VendingAppContext))]
-    [Migration("20240610101521_InitialMigration")]
+    [Migration("20240610213500_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -54,22 +54,17 @@ namespace DataBaseLayer.Migrations
                         new
                         {
                             Id = 3,
-                            BrandName = "Cola"
+                            BrandName = "Coca-Cola"
                         },
                         new
                         {
                             Id = 4,
-                            BrandName = "Merinda 0.33"
+                            BrandName = "Schweppes"
                         },
                         new
                         {
                             Id = 5,
-                            BrandName = "Sprite 0.5"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            BrandName = "Shweps 0.5"
+                            BrandName = "Sprite"
                         });
                 });
 
@@ -110,6 +105,7 @@ namespace DataBaseLayer.Migrations
                         {
                             Id = 1,
                             Count = 20,
+                            ImageUrl = "/img/1.jpg",
                             ItemType = 0,
                             Price = 1m,
                             Title = "1 рубль"
@@ -118,6 +114,7 @@ namespace DataBaseLayer.Migrations
                         {
                             Id = 2,
                             Count = 20,
+                            ImageUrl = "/img/2.jpg",
                             ItemType = 0,
                             Price = 2m,
                             Title = "2 рубля"
@@ -126,6 +123,7 @@ namespace DataBaseLayer.Migrations
                         {
                             Id = 3,
                             Count = 20,
+                            ImageUrl = "/img/5.jpg",
                             ItemType = 0,
                             Price = 5m,
                             Title = "5 рублей"
@@ -134,6 +132,7 @@ namespace DataBaseLayer.Migrations
                         {
                             Id = 4,
                             Count = 20,
+                            ImageUrl = "/img/10.jpg",
                             ItemType = 0,
                             Price = 10m,
                             Title = "10 рублей"
@@ -141,66 +140,272 @@ namespace DataBaseLayer.Migrations
                         new
                         {
                             Id = 5,
+                            BrandId = 3,
                             Count = 20,
+                            ImageUrl = "/img/coca-cola03.jpg",
                             ItemType = 1,
                             Price = 20m,
-                            Title = "Fanta 0.33"
+                            Title = "Coca-Cola 0.33"
                         },
                         new
                         {
                             Id = 6,
+                            BrandId = 3,
                             Count = 20,
+                            ImageUrl = "/img/coca-cola05.jpg",
                             ItemType = 1,
                             Price = 25m,
-                            Title = "Fanta 0.5"
+                            Title = "Coca-Cola 0.5"
                         },
                         new
                         {
                             Id = 7,
+                            BrandId = 3,
                             Count = 20,
+                            ImageUrl = "/img/coca-cola10.jpg",
                             ItemType = 1,
-                            Price = 22m,
-                            Title = "Pepsi 0.33"
+                            Price = 35m,
+                            Title = "Coca-Cola 1.0"
                         },
                         new
                         {
                             Id = 8,
+                            BrandId = 3,
                             Count = 20,
+                            ImageUrl = "/img/coca-colaLimon03.jpg",
                             ItemType = 1,
-                            Price = 27m,
-                            Title = "Pepsi 0.35"
+                            Price = 20m,
+                            Title = "Coca-Cola Лимон 0.33"
                         },
                         new
                         {
                             Id = 9,
+                            BrandId = 3,
                             Count = 20,
+                            ImageUrl = "/img/coca-colaLimon05.jpg",
                             ItemType = 1,
                             Price = 25m,
-                            Title = "Cola 0.33"
+                            Title = "Coca-Cola Лимон 0.5"
                         },
                         new
                         {
                             Id = 10,
+                            BrandId = 3,
                             Count = 20,
+                            ImageUrl = "/img/coca-colaLimon10.jpg",
                             ItemType = 1,
-                            Price = 30m,
-                            Title = "Cola 0.5"
+                            Price = 35m,
+                            Title = "Coca-Cola Лимон 1.0"
                         },
                         new
                         {
                             Id = 11,
+                            BrandId = 1,
                             Count = 20,
+                            ImageUrl = "/img/fantaApelsin03.jpg",
                             ItemType = 1,
-                            Price = 25m,
-                            Title = "Merinda 0.33"
+                            Price = 21m,
+                            Title = "Fanta Апельсин 0.33"
                         },
                         new
                         {
                             Id = 12,
+                            BrandId = 1,
                             Count = 20,
+                            ImageUrl = "/img/fantaApelsin05.jpg",
                             ItemType = 1,
-                            Price = 25m,
-                            Title = "Merinda 0.5"
+                            Price = 26m,
+                            Title = "Fanta Апельсин 0.5"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            BrandId = 1,
+                            Count = 20,
+                            ImageUrl = "/img/fantaApelsin10.jpg",
+                            ItemType = 1,
+                            Price = 34m,
+                            Title = "Fanta Апельсин 1.0"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            BrandId = 1,
+                            Count = 20,
+                            ImageUrl = "/img/fantaVinograd03.jpg",
+                            ItemType = 1,
+                            Price = 22m,
+                            Title = "Fanta Виноград 0.33"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            BrandId = 1,
+                            Count = 20,
+                            ImageUrl = "/img/fantaVinograd05.jpg",
+                            ItemType = 1,
+                            Price = 26m,
+                            Title = "Fanta Виноград 0.5"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            BrandId = 1,
+                            Count = 20,
+                            ImageUrl = "/img/fantaVinograd10.jpg",
+                            ItemType = 1,
+                            Price = 36m,
+                            Title = "Fanta Виноград 1.0"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            BrandId = 2,
+                            Count = 20,
+                            ImageUrl = "/img/pepsi03.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Pepsi 0.33"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            BrandId = 2,
+                            Count = 25,
+                            ImageUrl = "/img/pepsi05.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Pepsi 0.5"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            BrandId = 2,
+                            Count = 35,
+                            ImageUrl = "/img/pepsi10.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Pepsi 1.0"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            BrandId = 2,
+                            Count = 24,
+                            ImageUrl = "/img/pepsiZero03.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Pepsi Zero 0.33"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            BrandId = 2,
+                            Count = 29,
+                            ImageUrl = "/img/pepsiZero05.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Pepsi Zero 0.5"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            BrandId = 2,
+                            Count = 48,
+                            ImageUrl = "/img/pepsiZero10.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Pepsi Zero 1.0"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            BrandId = 4,
+                            Count = 22,
+                            ImageUrl = "/img/schweppesKlukva03.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Schweppes Клюква 0.33"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            BrandId = 4,
+                            Count = 26,
+                            ImageUrl = "/img/schweppesKlukva05.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Schweppes Клюква 0.5"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            BrandId = 4,
+                            Count = 38,
+                            ImageUrl = "/img/schweppesKlukva10.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Schweppes Клюква 1.0"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            BrandId = 4,
+                            Count = 22,
+                            ImageUrl = "/img/schweppesLimon03.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Schweppes Лимон 0.33"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            BrandId = 4,
+                            Count = 27,
+                            ImageUrl = "/img/schweppesLimon05.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Schweppes Лимон 0.5"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            BrandId = 4,
+                            Count = 39,
+                            ImageUrl = "/img/schweppesLimon10.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Schweppes Лимон 1.0"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            BrandId = 5,
+                            Count = 20,
+                            ImageUrl = "/img/sprite03.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Sprite 0.33"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            BrandId = 5,
+                            Count = 28,
+                            ImageUrl = "/img/sprite05.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Sprite 0.5"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            BrandId = 5,
+                            Count = 38,
+                            ImageUrl = "/img/sprite10.jpg",
+                            ItemType = 1,
+                            Price = 20m,
+                            Title = "Sprite 1.0"
                         });
                 });
 
